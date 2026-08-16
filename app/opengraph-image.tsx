@@ -22,6 +22,7 @@ export default function OpenGraphImage() {
       >
         <div
           style={{
+            display: "flex",
             fontSize: 22,
             letterSpacing: 6,
             textTransform: "uppercase",
@@ -31,11 +32,25 @@ export default function OpenGraphImage() {
           {site.name}
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          <div style={{ fontSize: 64, lineHeight: 1.05, maxWidth: 900 }}>
+          <div
+            style={{
+              display: "flex",
+              fontSize: 64,
+              lineHeight: 1.05,
+              maxWidth: 900,
+            }}
+          >
             Your calendar should not close at 5.
           </div>
-          <div style={{ fontSize: 26, color: "#c9c0b2", maxWidth: 820 }}>
-            {site.tagline} Calls forward. The AI books.
+          <div
+            style={{
+              display: "flex",
+              fontSize: 26,
+              color: "#c9c0b2",
+              maxWidth: 820,
+            }}
+          >
+            {`${site.tagline} Calls forward. The AI books.`}
           </div>
         </div>
       </div>
