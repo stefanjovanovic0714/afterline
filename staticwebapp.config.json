@@ -1,0 +1,10 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/api/*", "/_next/*", "*.{js,css,png,jpg,svg,ico,txt,xml,woff2}"]
+  },
+  "trailingSlash": "auto",
+  "platform": {
+    "apiRuntime": "node:20"
+  }
+}
