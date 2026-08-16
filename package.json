@@ -16,9 +16,11 @@
     "react-dom": "19.1.0",
     "resend": "^4.8.0"
   },
+  "optionalDependencies": {
+    "@tailwindcss/oxide-linux-arm64-gnu": "^4.3.3"
+  },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/oxide-linux-arm64-gnu": "^4.3.3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
