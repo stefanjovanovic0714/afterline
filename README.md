@@ -24,9 +24,8 @@ Without a key, local `next dev` logs the lead and still returns success.
 
 ## Azure Static Web Apps
 
-1. Create a SWA in the Azure portal (Next.js / Node 20).
-2. Connect this GitHub repo, or add `AZURE_STATIC_WEB_APPS_API_TOKEN` as a repo secret.
-3. Add the Resend secrets on the SWA and as GitHub Actions secrets.
-4. Push `main`. The workflow in `.github/workflows/azure-static-web-apps.yml` builds and deploys. Pull requests get preview URLs.
+GitHub Actions exports a static site (`out/`) and deploys a small `/api/contact` function. Hybrid Next.js SSR was timing out on the Free SKU.
+
+Add `AZURE_STATIC_WEB_APPS_API_TOKEN` plus the Resend secrets on the SWA and as GitHub Actions secrets, then push `main`.
 
 Rename the brand in `app/lib/site.ts`.
